@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UItext_en-US
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 9c43c10bd1abdd84585e7d7fe92d37f2, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 666034851840
+    m_Localized: 'Items:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4095142612992
+    m_Localized: Enemy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339968331776
+    m_Localized: 'Turns:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4424173178880
+    m_Localized: 'HP:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4476853637120
+    m_Localized: 'ATK:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4545107546112
+    m_Localized: 'RES:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29584427143168
+    m_Localized: 'Skips:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32336918171648
+    m_Localized: Start Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32451183595520
+    m_Localized: Rules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32501863370752
+    m_Localized: Map
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32538475450368
+    m_Localized: 'Player Health:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33358180864000
+    m_Localized: '- You have 4 types of Points correspond to 4 colors.
+
+      - You
+      choose one of 4 cards with color and number that adds Points to that color.
+      But it''s like in UNO: you get points only when put card on the same color
+      or same number.
+
+      - You can play action cards when you have enough points.
+
+      -
+      Doing actions and putting cards deacreases your turns count, and when it reaches
+      0 - enemy attacks.
+
+      - After each battle you have to choose one item.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33743696121856
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34413350309888
+    m_Localized: Full Heal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34482103341056
+    m_Localized: Get Item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34995737808896
+    m_Localized: Choose one Item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35329101090816
+    m_Localized: 'Congratulations!
+
+      You Win!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35564279910400
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38397045723136
+    m_Localized: 'Your HP is over!
+
+      You lost =('
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

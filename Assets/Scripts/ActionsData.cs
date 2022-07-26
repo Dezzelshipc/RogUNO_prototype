@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.Localization.Settings;
 
 public class ActionsData : MonoBehaviour
 {
@@ -91,38 +91,43 @@ public class ActionsData : MonoBehaviour
         }
     }
 
+    private string GetDescription(string key)
+    {
+        return LocalizationSettings.StringDatabase.GetLocalizedString("ActionsText", key);
+    }
+
     private void Start()
     {
         gm = FindObjectOfType<GameManager>();
 
         actionsData.Add("Damage1", new Data("Damage1",
-                                            "Deal {0} Damage",
+                                            GetDescription("Damage"),
                                             "e_damage",
                                             new int[] { 2, 2, 2, 2 },
                                             new float[] { 1f },
                                             new DamageEnemyAction(gm)));
         actionsData.Add("Damage5", new Data("Damage5",
-                                            "Deal {0} Damage",
+                                            GetDescription("Damage"),
                                             "e_damage",
                                             new int[] { 20, 0, 0, 0 },
                                             new float[] { 5f },
                                             new DamageEnemyAction(gm)));
 
         actionsData.Add("Heal5", new Data("Heal1",
-                                          "Heal {0} HP",
+                                          GetDescription("Heal"),
                                           "p_heal",
                                           new int[] { 0, 0, 30, 0 },
                                           new float[] { 5f },
                                           new HealPlayerAction(gm)));
 
         actionsData.Add("Resist1", new Data("Resist1",
-                                            "Get {0} Damge Resist",
+                                            GetDescription("Resist"),
                                             "p_resist",
                                             new int[] { 0, 0, 0, 15 },
                                             new float[] { 1f },
                                             new ResistPlayerAction(gm)));
         actionsData.Add("Skip1", new Data("Skip1",
-                                          "Enemy skips {0} turn(s)",
+                                          GetDescription("Skip"),
                                           "e_skip",
                                           new int[] { 0, 30, 0, 0 },
                                           new float[] { 1f },

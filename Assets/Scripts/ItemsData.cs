@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 
 public class ItemsData : MonoBehaviour
 {
@@ -97,13 +98,27 @@ public class ItemsData : MonoBehaviour
         Gen();
     }
 
+    private string GetDescription(string key)
+    {
+        return LocalizationSettings.StringDatabase.GetLocalizedString("ItemsText", key);
+    }
+
     public void Gen()
     {
         if (itemsData.Count > 0)
             return;
         gm = FindObjectOfType<GameManager>();
-        itemsData.Add("IncMult", new Data("IncMult", "D", "Increases Damage multiplier by +50%", new DamageMultiplier(gm, new float[] { 0.5f })));
-        itemsData.Add("StartResist", new Data("StartResist", "R", "Get +1 RES at the start of battle", new AddResist(gm, new float[] { 1f })));
-        itemsData.Add("MoreTurns", new Data("MoreTurns", "T", "Add +5 turns for battles", new AddMaxTurns(gm, new float[] { 5f })));
+        itemsData.Add("IncMult", new Data("IncMult",
+                                          "D",
+                                          GetDescription("IncMult"),
+                                          new DamageMultiplier(gm, new float[] { 0.5f })));
+        itemsData.Add("StartResist", new Data("StartResist",
+                                              "R",
+                                              GetDescription("StartResist"),
+                                              new AddResist(gm, new float[] { 1f })));
+        itemsData.Add("MoreTurns", new Data("MoreTurns",
+                                            "T",
+                                            GetDescription("MoreTurns"),
+                                            new AddMaxTurns(gm, new float[] { 5f })));
     }
 }

@@ -23,4 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rules.unity
     guid: 9d141d25159820f4fa0d77f184718cd6
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: 7720d33103acedb4b80e245cbdba3600
+  - enabled: 1
+    path: Assets/Scenes/BackToMenu.unity
+    guid: 182e84b6f50d8b142992beb6508244ec
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: df808fcf8ec41b040894e8d9a9082790, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 230e96e2945c9ff43bcb9d98b7acc97d, type: 2}

@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UItext Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UItext
+  m_TableCollectionNameGuidString: 9c43c10bd1abdd84585e7d7fe92d37f2
+  m_Entries:
+  - m_Id: 666034851840
+    m_Key: Items
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4095142612992
+    m_Key: Enemy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339968331776
+    m_Key: Turns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4424173178880
+    m_Key: HP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4476853637120
+    m_Key: ATK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4545107546112
+    m_Key: RES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29584427143168
+    m_Key: Skips
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32336918171648
+    m_Key: StartGame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32451183595520
+    m_Key: Rules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32501863370752
+    m_Key: Map
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32538475450368
+    m_Key: PlayerHealth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33358180864000
+    m_Key: RulesText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33743696121856
+    m_Key: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34413350309888
+    m_Key: FullHeal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34482103341056
+    m_Key: GetItem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34995737808896
+    m_Key: ChooseItem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35329101090816
+    m_Key: Congrats
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35564279910400
+    m_Key: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38397045723136
+    m_Key: Lost
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 420193258143219740
+  references:
+    version: 2
+    RefIds:
+    - rid: 420193258143219740
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1658820817854

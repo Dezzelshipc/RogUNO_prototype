@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Localization.Settings;
 
 public class Enemy : MonoBehaviour
 {
     public int health = 30;
-    public int maxHealth = 30;
 
     public int attackDamage = 5;
 
     private int skips = 0;
 
     public string scriptName = "Attack";
+    private string skipText;
 
     public TMP_Text attributes;
     public TMP_Text effects;
@@ -20,14 +21,16 @@ public class Enemy : MonoBehaviour
     private GameManager gm;
     private SavedData savedData;
 
-    private void Start()
+    private IEnumerator Start()
     {
+        yield return LocalizationSettings.InitializationOperation;
+        skipText = LocalizationSettings.StringDatabase.GetLocalizedString("UItext", "Skips");
         gm = FindObjectOfType<GameManager>();
         savedData = FindObjectOfType<SavedData>();
+
         health = savedData.enemyHealth;
         attackDamage = savedData.enemyDamage;
-
-        attributes.text = health + "\n" + attackDamage;
+        attributes.text = $"{health}\n{attackDamage}";
     }
 
     public void Damage(int damage)
@@ -39,7 +42,7 @@ public class Enemy : MonoBehaviour
         {
             Die();
         }
-        attributes.text = health + "\n" + attackDamage;
+        attributes.text = $"{health}\n{attackDamage}";
     }
 
     public void Die()
@@ -78,7 +81,7 @@ public class Enemy : MonoBehaviour
         effects.text = "";
         if (skips > 0)
         {
-            effects.text += $"Skips: {skips}";
+            effects.text += skipText + $" {skips}";
         }
     }
 }

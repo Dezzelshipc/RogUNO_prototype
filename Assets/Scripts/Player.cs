@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class Player : MonoBehaviour
@@ -9,7 +10,6 @@ public class Player : MonoBehaviour
     public int maxHealth;
 
     public int resist;
-    public float damageMultiplier = 1;
 
     public TMP_Text attributes;
 
@@ -44,6 +44,7 @@ public class Player : MonoBehaviour
     public void Die()
     {
         gameObject.SetActive(false);
+        SceneManager.LoadScene("Lose");
     }
 
     public void Heal(int amount)

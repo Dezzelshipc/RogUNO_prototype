@@ -212,7 +212,7 @@ public class GameManager : MonoBehaviour
     {
         deckSizeText.text = deck.Count.ToString();
         discardSizeText.text = discardPile.Count.ToString();
-        pointsText.text = points[0] + "\n" + points[1] + "\n" + points[2] + "\n" + points[3];
+        pointsText.text = $"{points[0]}\n{points[1]}\n{points[2]}\n{points[3]}";
         turnsText.text = turnsRemaining.ToString();
     }
 }

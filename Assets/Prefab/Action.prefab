@@ -75,9 +75,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1bccd41613166547bff3e12fa149e92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Name
+  Name: 
   description: Desc
   cost: 00000000000000000000000000000000
+  numbers: []
   tags: tag
   costText: {fileID: 2849870263250147766}
   descriptionText: {fileID: 2849870263095689349}
@@ -201,7 +202,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.045013428, y: 0.7384033}
+  m_AnchoredPosition: {x: 0.56, y: 0.7384033}
   m_SizeDelta: {x: 1.6737, y: 1.1109}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &2849870262894636780

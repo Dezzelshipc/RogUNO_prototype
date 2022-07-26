@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class Action : MonoBehaviour
 {
@@ -26,7 +24,6 @@ public class Action : MonoBehaviour
     {
         gm = FindObjectOfType<GameManager>();
         TextUpdate();
-        costText.text = $"{cost[0]}\n{cost[1]}\n{cost[2]}\n{cost[3]}";
     }
 
     private void OnMouseDown()
