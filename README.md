@@ -2,6 +2,6 @@
  
 Prototype game for practice
 
-[Play on site](http://dezzelshipc.ml/game)
+[Play on site](https://dezzelshipc.github.io/practice2022/)
 [Play on itch.io](https://dezzelshipc.itch.io/roguno)
 [Play on simmer.io](https://simmer.io/@Dezzelshipc/roguno)
